@@ -1,0 +1,258 @@
+.page {
+  min-height: 500px;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+#main {
+	padding-top: 20px;
+}
+
+.card {
+	padding: 10px 10px;
+}
+
+.center {
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+}
+
+#profileImg {
+	width: 200px !important;
+}
+
+.section {
+  margin-bottom: -40px;
+}
+
+a {
+  transition: background-color .5s ease-out;
+}
+
+a:hover {
+  background-color: aliceblue;
+  transition: background-color .5s ease-in;
+}
+
+nav, footer {
+  background-color: rgba(123, 175, 212, 0.94) !important;
+}
+
+.nav-link > a:hover {
+  color: rgba(245, 212, 101, 0.96) !important;
+  transition: color .5s ease-in;
+}
+
+.nav-link > a {
+  font-family: "Montserrat", sans-serif;
+}
+
+#my-name {
+  font-family: 'Fugaz One', cursive;
+  color: rgba(245, 212, 101, 0.96) !important;
+  font-size: 28px;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.show-name {
+  opacity: 1 !important;
+  transition: opacity 1s ease-in;
+}
+
+.right-nav {
+  padding-right:50px;
+}
+
+.parallax-img {
+  width: 100%;
+  height: auto;
+  min-width: 780px !important;
+}
+
+.welcome {
+  background-image: url(../img/Pitt.jpg);
+  background-size: cover;
+  background-position:center;
+  height: 500px;
+  border: 0.5px solid rgba(0, 0, 0, 0)
+}
+
+.transbox {
+  background-color: #ffffff;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  position: relative;
+  top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 350px;
+  border-radius: 2px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Fugaz One", cursive;
+}
+
+.caption {
+  position: relative;
+  top: 100px;
+  color: aliceblue;
+  left: -500px;
+  width: 350px;
+}
+
+.caption-text {
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 1px solid aliceblue;
+  font-size: 16px;
+}
+
+.location {
+  display: block;
+  width: 100%;
+  font-family: "Fugaz One";
+}
+
+.fugaz {
+  font-family: "Fugaz One";
+}
+
+.montserrat {
+  font-family: "Montserrat";
+}
+
+.page-wrapper {
+  min-height: 500px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.72) !important;
+  transition: background-color .5s ease-in, box-shadow .5s;
+}
+
+form {
+  padding-bottom: 20px !important;
+  padding-top: 10px !important;
+}
+
+.link-element .card:hover {
+  background-color: rgba(255, 255, 255, 0.88) !important;
+  transition: background-color .5s ease-in, box-shadow .5s;
+}
+
+.link-element, .popout-element {
+  opacity: 0;
+}
+
+.info-header {
+  color: white;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+.page-footer {
+  margin-top: 0px !important;
+}
+
+#background-wrapper {
+  background-image: url(../img/computer.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+#image-wrapper {
+  background-image: url(../img/phone.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.show-caption {
+  left: 20px;
+  transition: left .7s ease-out;
+}
+
+.transbox p {
+  margin: 5%;
+  color: #000000;
+}
+
+.welcome-text {
+  font-family: 'Fugaz One', cursive;
+  font-size: 48px;
+  text-align: center;
+}
+
+.collapsible-body {
+  padding: 10px;
+}
+
+.contact-container {
+  min-height: 550px;
+  padding-top: 50px;
+  opacity: 0;
+}
+
+.show-contact {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.error-type, .success-word {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  display: inline-block;
+  font-size: 18px
+}
+
+.success-word {
+    color: green;
+}
+
+.error-type {
+  color: red;
+}
+
+/* label focus color */
+.input-field input[type]:focus + label, .input-field .prefix.active, textarea:focus + label  {
+  color: rgba(123, 175, 212, 1.0) !important;
+}
+
+.input-field input[type]:focus {
+  border-bottom: 1px solid rgba(123, 175, 212, 1.0);
+  /*box-shadow: 0 1px 0 0 #000;*/
+}
+
+textarea:focus {
+  border-bottom: 1px solid rgba(123, 175, 212, 1.0) !important;
+}
+
+.btn {
+  background-color: rgba(123, 175, 212, 1.0) !important;
+}
+
+.btn:hover {
+  color: rgba(245, 212, 101, 0.96) !important;
+  transition: color .3s ease-in;
+}
+
+@media(max-width: 700px) {
+  #family{
+    left: 20% !important;
+  }
+  .parallax-img {
+    left: 35% !important;
+  }
+  .caption {
+    width: 275px;
+  }
+  .caption-text {
+    font-size: 14px;
+  }
+}
