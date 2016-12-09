@@ -20,6 +20,8 @@ CS1520 Project Part 2
 ###Header Updates
 * Added favicon
 * Added my name to the header
+ * On index page, fades in (and out) once you have scrolled past my name in the transbox
+ * On all other pages always shows
 * Updated header link font (Montserrat)
 * Added transition to make text gold when hovering on header links
 
