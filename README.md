@@ -3,8 +3,8 @@ CS1520 Project Part 2
 
 ##General Updates
 * Updated site color theme (blue and gold)
-* Used Google fonts for more diverse typefaces (Fugaz One for all page headers)
-* Used Google's Material Icons (Home and Contact pages)
+* Used Google fonts for more diverse typefaces
+* Added Google's Material Icons
 * Header links now navigate to new PHP file instead of using JS to change views
 * Implemented Materialize staggered list transition on list elements
 * Added fade-in transitions on each page
