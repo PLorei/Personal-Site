@@ -14,7 +14,9 @@ CS1520 Project Part 2
 * Implemented interaction with mySQL DB (in submit.php file)
 * Added PHP function to build popout lists - buildPopoutList()
 * Added PHP function to build chip elements - buildChip()
-* Updated getScripts() function to take an array parameter for the script urls (previously hardcoded)
+* Updated getScripts() and getStyles() functions to take an array parameter for the script/style urls (previously hardcoded)
+* Moved page-specific styles to separate stylesheets
+* Made card elements semi-transparent
 * Commented Code
 
 ---
@@ -26,6 +28,7 @@ CS1520 Project Part 2
  * On all other pages always shows
 * Updated header link font (Montserrat)
 * Added transition to make text gold when hovering on header links
+* Used updated getStyles() prototype to conditionally add page-specific stylesheets based on the URL
 
 ###Footer Updates
 * Used new getScripts() prototype to conditionally add page-specific JavaScript based on the URL
@@ -43,7 +46,6 @@ CS1520 Project Part 2
 
 ###Contact Page Updates
 * Added background image
-* Made card elements semi-transparent
 * Added slide-in effect for the list of links
 * Added form that submits to PHP file (submit.php) to handle DB interaction
  * Used HTML form attributes to ensure all fields are filled out
@@ -66,6 +68,5 @@ CS1520 Project Part 2
 * Added background image
 * Added slide-in effect for list of links
 * Added a link to this github repo
-* Made cards semi-transparent
 
-
+_This site was developed and tested on Google Chrome and Firefox, it would be preferred if you used one of those browsers when viewing_
