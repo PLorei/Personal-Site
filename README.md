@@ -2,14 +2,14 @@
 CS1520 Project Part 2
 
 ##General Updates
-* Updated site color theme
+* Updated site color theme (blue and gold)
 * Used Google fonts for more diverse typefaces (Fugaz One for all page headers)
 * Used Google's Material Icons (Home and Contact pages)
 * Header links now navigate to new PHP file instead of using JS to change views
 * Implemented Materialize staggered list transition on list elements
-* Added fade-ins transitions on each page
+* Added fade-in transitions on each page
 * Updated sections from Home, About, and Contact to Home, Site Info, and Contact
-  * moved the About page's content to the Home page
+  * Moved the About page's content to the Home page
 * Implemented interaction with mySQL DB (in submit.php file)
 * Added PHP function to build popout lists - buildPopoutList()
 * Added PHP function to build chip elements - buildChip()
