@@ -2,6 +2,7 @@
   include 'includes/functions.php';
   include 'includes/header.php';
 ?>
+<div class="page-wrapper">
   <div class="welcome">
     <div class="transbox">
       <p class="welcome-text">
@@ -134,7 +135,7 @@
       </p>
     </div>
   </div>
-
+</div>
 <?php
   include 'includes/footer.php';
 ?>

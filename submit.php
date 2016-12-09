@@ -28,6 +28,22 @@
   // select database
   mysqli_select_db($conn,"myData");
 
+  // build the table if it does not exist
+  $sql = "CREATE TABLE IF NOT EXISTS messages (
+    first_name  VARCHAR(50) NOT NULL,
+    last_name   VARCHAR(50) NOT NULL,
+    email       VARCHAR(50) NOT NULL,
+    message_text VARCHAR(150) NOT NULL,
+    time_sent   TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY(email, time_sent)
+  )";
+
+  if (!$conn->query($sql)) {
+    echo "<div class='col s12 m8 offset-m2'><div class='submit-wrapper card z-depth-2'><span class='db-error'><span class='error-type'>Error creating the database: </span>" . $conn->error;
+    echo "</span></div></div>";
+  }
+
+  // insert the form data
   $sql="INSERT INTO messages (first_name, last_name, email, message_text)
     VALUES
     ('$_POST[firstname]','$_POST[lastname]', '$_POST[email]', '$_POST[messagetext]')";

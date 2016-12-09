@@ -34,7 +34,7 @@
             array("http://materializecss.com/", "Materialize CSS"),
             array("https://fonts.google.com", "Google Fonts"),
             array("http://www.mattbowytz.com/cs1520.php", "CS1520 Home Page"),
-            array("https://github.com/cs1520", "CS1520 GitHub Page"),
+            array("https://github.com/PLorei/Project2", "Site GitHub Repo"),
           );
           foreach($links as $cur) {
             echo "<li class='link-element'>";
