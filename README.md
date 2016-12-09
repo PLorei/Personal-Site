@@ -26,7 +26,7 @@ CS1520 Project Part 2
 * Added transition to make text gold when hovering on header links
 
 ###Footer Updates
-* Used new getScripts() prototype to conditionally add page-specific JavaScript
+* Used new getScripts() prototype to conditionally add page-specific JavaScript based on the URL
 
 ###Home Page Updates
 * Added Cathedral Banner image with my name in a transbox
