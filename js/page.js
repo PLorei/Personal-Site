@@ -1,26 +1,19 @@
 $(document).ready(function () {
   //showHome();
-  Materialize.showStaggeredList('#link-list');
   materializeStockFunctions();
-  $(".contact-container").addClass("show-contact");
+  $(".contact-container").addClass("show-container");
+  $(".page-wrapper").addClass("show-container");
+
+  // delay the staggered list .5s so that page can fade in
+  setTimeout(showList, 500);
 });
+
+function showList() {
+  Materialize.showStaggeredList('#link-list');
+}
 
 function materializeStockFunctions() {
   $(".button-collapse").sideNav();
   $('.parallax').parallax();
   $('.collapsible').collapsible();
-}
-function showHome() {
-  $(".page").hide();
-  $("#home-page").show();
-}
-
-function showAbout() {
-  $(".page").hide();
-  $("#about-page").show();
-}
-
-function showContact() {
-  $(".page").hide();
-  $("#contact-page").show();
 }
