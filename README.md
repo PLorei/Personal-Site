@@ -36,6 +36,7 @@ CS1520 Project Part 2
 * Broke up text content and placed in between Parallaxes
 * Added Image captions 
 * Added popoutlist of programming languages, work experience/skills, and coursework
+ * Utilized Materialize's _Chip_ for each entry
 * Now contains content previously found on About page
 * Moved Home Page specific JavaScript functions to their own separate file (index.js)
  * Added function callback to window scroll event, fires JavaScript transitions based on window scroll offset
