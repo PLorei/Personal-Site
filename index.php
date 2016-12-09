@@ -27,11 +27,9 @@
       Philadelphia, PA
     </span>
   </div>
-  <div class="parallax-container" id="familyContainer">
-    <div class="parallax">
-      <img id="family" src="img/Family.jpg">
-    </div>
-  </div>
+
+  <?php getParallax("family", "Family.jpg"); ?>
+
   <div class="section white">
     <div class="row container">
       <h5 class="header">Programming</h2>
@@ -119,11 +117,9 @@
       Ohiopyle, PA
     </span>
   </div>
-  <div class="parallax-container" id="raftContainer">
-    <div class="parallax">
-      <img class="parallax-img" id="raft" src="img/Raft.jpg">
-    </div>
-  </div>
+
+  <?php getParallax("raft", "Raft.jpg"); ?>
+
   <div class="section white">
     <div class="row container">
       <h5 class="header">Other Interests</h2>

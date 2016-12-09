@@ -99,4 +99,11 @@
     }
     echo "</ul>";
   }
+
+  function getParallax(string $name, string $fileName) {
+    echo "<div class='parallax-container' id='" . $name . "Container'>";
+    echo "<div class='parallax'>";
+    echo "<img class='parallax-img' id='" . $name . "' src='img/" . $fileName . "'>";
+    echo "</div></div>";
+  }
 ?>
