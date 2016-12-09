@@ -23,9 +23,25 @@
           ?>
         </ul>
         <ul class="right right-nav">
-          <li id="my-name">
-            Peter Lorei
-          </li>
+
+          <?php
+            if (strpos($_SERVER['SCRIPT_NAME'], 'index.php') !== false) {
+          ?>
+              <li id="my-name">
+                Peter Lorei
+              </li>
+          <?php
+            }
+            else {
+          ?>
+              <li id="my-name" class="show-name">
+                Peter Lorei
+              </li>
+          <?php
+            }
+          ?>
+
+
         </ul>
         <ul class="side-nav" id="mobile-demo">
           <?php

@@ -14,9 +14,7 @@
       if (strpos($_SERVER['SCRIPT_NAME'], 'index.php') !== false) {
         array_push($scripts, "js/index.js");
       }
-      if (strpos($_SERVER['SCRIPT_NAME'], 'contact.php') !== false) {
-        array_push($scripts, "js/contact.js");
-      }
+
       getScripts($scripts);
     ?>
   </body>

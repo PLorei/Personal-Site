@@ -11,9 +11,7 @@
     foreach($navLinks as $value):
   	  echo "<li class='nav-link'><a href='";
       echo $value[1];
-      echo "' onclick='show";
-  	  echo $value[0];
-  	  echo "()'>";
+      echo "'>";
   	  echo $value[0];
   	  echo "</a></li>";
     endforeach;
