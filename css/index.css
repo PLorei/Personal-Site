@@ -69,6 +69,21 @@
   padding: 10px;
 }
 
+.modal {
+  width: 225px;
+  height: 400px;
+  overflow-y: hidden;
+}
+
+.modal-content {
+  padding: 0px !important;
+}
+
+.modal-img {
+  height: 400px;
+  width: auto;
+}
+
 /* Shifting Parallax Images on Mobile so that correct parts are centered */
 @media(max-width: 700px) {
   #family{

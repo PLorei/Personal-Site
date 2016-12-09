@@ -24,10 +24,10 @@
     </div>
     <form class="card col s12 m8 offset-m2 l8 pull-l4" action="submit.php" method="post">
       <?php
-        buildInputField("firstName", "validate", "First Name", "person_outline", "", false);
-        buildInputField("lastName", "validate", "Last Name", "account_circle", "", false);
-        buildInputField("email", "validate", "Email", "email", "Incorrect Email Format", false);
-        buildInputField("messageText", "materialize-textarea", "Message Text", "mode_edit", "", true);
+        buildInputField("firstName", "validate", "First Name", "person_outline", "", false, false);
+        buildInputField("lastName", "validate", "Last Name", "account_circle", "", false, false);
+        buildInputField("email", "validate", "Email", "email", "Incorrect Email Format", false, true);
+        buildInputField("messageText", "materialize-textarea", "Message Text", "mode_edit", "", true, false);
       ?>
       <div class="col s6 offset-s3 center">
         <button class="btn waves-effect waves-light" id="submit" type="submit" name="action">

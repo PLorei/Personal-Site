@@ -70,12 +70,17 @@
   # $labelText - text to be displayed in form label
   # $iconName - code for Material icon to prefix field
   # $dataError - sets the field's data-error property
-  # $isTextArea - true renders a textarea, false renders an input field
-  function buildInputField(string $id, string $class, string $labelText, string $iconName, string $dataError, bool $isTextArea) {
+  # $isTextArea - true renders a textarea
+  # $isEmail - true renders an input type = email
+  # if neither of these flags are set, renders input type = text
+  function buildInputField(string $id, string $class, string $labelText, string $iconName, string $dataError, bool $isTextArea, bool $isEmail) {
     echo "<div class='input-field col s12 m8 offset-m2'>";
     echo "<i class='material-icons prefix'>" . $iconName . "</i>";
     if($isTextArea) {
       echo "<textarea id='" . $id . "' name='" . $id . "' class='" . $class . "' required='' aria-required='true'></textarea>";
+    }
+    else if($isEmail) {
+      echo "<input id='" . $id . "' name='" . $id . "'' type='email' class='" . $class . "' required='' aria-required='true'>";
     }
     else {
       echo "<input id='" . $id . "' name='" . $id . "'' type='text' class='" . $class . "' required='' aria-required='true'>";

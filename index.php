@@ -129,12 +129,17 @@
       <h5 class="header">Other Interests</h2>
       <p class="grey-text text-darken-3 lighten-3">
         I don't think it's healthy to spend all my time staring at code, so I like to get outdoors and hike, raft or kayak when the weather is nice.
-        People close to me will tell you that I am super competitive; I play (and watch) basketball at least a few times a week and tennis whenever the weather permits.
+        People close to me will tell you that I am super competitive; I play (and watch) <a class="modal-trigger" href="#basketball" onclick="showModal()">basketball</a> at least a few times a week and tennis whenever the weather permits.
         I am also really passionate about music, I listen to a wide range of artists and love concerts.
         In my spare time, I produce music on Apple's Logic Pro X, and write shell scripts to make my life easier (i.e. Map drum samples to pads on midi controller) when possible.
       </p>
     </div>
   </div>
+
+  <div id="basketball" class="modal">
+      <img src="img/Peter.gif" class="modal-img" />
+  </div>
+
 </div>
 <?php
   include 'includes/footer.php';

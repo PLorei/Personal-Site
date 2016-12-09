@@ -1,9 +1,14 @@
 $(document).ready(function () {
+
     var popoutShown = false;
     $(window).on("scroll", function() {
       popoutShown = scrollEvents(popoutShown);
     });
 });
+
+function showModal() {
+  $('.modal').openModal();
+}
 
 function scrollEvents(popoutShown) {
   if ($(window).scrollTop() > 147) {
