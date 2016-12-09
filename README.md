@@ -8,8 +8,9 @@ CS1520 Project Part 2
 * Header links now navigate to new PHP file instead of using JS to change views
 * Implemented Materialize staggered list transition on list elements
 * Added fade-in transitions on each page
-* Updated sections from Home, About, and Contact to Home, Site Info, and Contact
+* Removed About Page
   * Moved the About page's content to the Home page
+* Added Site Info and Submit pages
 * Implemented interaction with mySQL DB (in submit.php file)
 * Added PHP function to build popout lists - buildPopoutList()
 * Added PHP function to build chip elements - buildChip()
