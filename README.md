@@ -15,6 +15,7 @@ CS1520 Project Part 2
 * Added PHP function to build chip elements - buildChip()
 * Updated getScripts() function to take an array parameter for the script urls (previously hardcoded)
 * Commented Code
+
 ---
 
 ###Header Updates
