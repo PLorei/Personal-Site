@@ -18,7 +18,7 @@
       </p>
     </div>
   </div>
-  <div class="caption" id="family-caption">
+  <div class="caption" id="familyCaption">
     <span class="caption-text">
       Augie's highschool graduation.
     </span>
@@ -27,7 +27,7 @@
       Philadelphia, PA
     </span>
   </div>
-  <div class="parallax-container" id="family-container">
+  <div class="parallax-container" id="familyContainer">
     <div class="parallax">
       <img id="family" src="img/Family.jpg">
     </div>
@@ -110,7 +110,7 @@
       </ul>
     </div>
   </div>
-  <div class="caption" id="raft-caption">
+  <div class="caption" id="raftCaption">
     <span class="caption-text">
       Rafting the Lower Youghiogheny.
     </span>
@@ -119,7 +119,7 @@
       Ohiopyle, PA
     </span>
   </div>
-  <div class="parallax-container" id="raft-container">
+  <div class="parallax-container" id="raftContainer">
     <div class="parallax">
       <img class="parallax-img" id="raft" src="img/Raft.jpg">
     </div>

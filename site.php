@@ -2,7 +2,7 @@
   include 'includes/functions.php';
   include 'includes/header.php';
 ?>
-<div id="background-wrapper">
+<div id="backgroundWrapper">
   <div class="container page-wrapper">
     <h3 class="center info-header">About This Site</h3>
     <div class="row">
@@ -22,11 +22,9 @@
             I used Google fonts for the typefaces on this page. The fonts used are:
           </p>
           <span class="fugaz">Fugaz One</span>, <span class="montserrat">Montserrat</span>, and Roboto.
-
         </div>
       </div>
       <div class="col s12 m6">
-        <ul id="link-list">
         <?php
           $links = array(
             array("https://atom.io/", "Atom"),
@@ -36,13 +34,8 @@
             array("http://www.mattbowytz.com/cs1520.php", "CS1520 Home Page"),
             array("https://github.com/PLorei/Project2", "Site GitHub Repo"),
           );
-          foreach($links as $cur) {
-            echo "<li class='link-element'>";
-          	buildLinkBlock($cur[0], $cur[1]);
-            echo "</li>";
-          }
+          buildLinkList($links);
         ?>
-        </ul>
       </div>
     </div>
   </div>

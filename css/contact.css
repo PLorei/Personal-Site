@@ -1,0 +1,59 @@
+/* Styles for the Contact and Submit Pages */
+form {
+  padding-bottom: 20px !important;
+  padding-top: 10px !important;
+}
+
+.error-type, .success-word {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  display: inline-block;
+  font-size: 18px
+}
+
+.success-word {
+    color: green;
+}
+
+.error-type {
+  color: red;
+}
+
+.contact-container {
+  min-height: 550px;
+  padding-top: 20px;
+  opacity: 0;
+}
+
+.input-field input[type]:focus + label, .input-field .prefix.active, textarea:focus + label  {
+  color: rgba(123, 175, 212, 1.0) !important;
+}
+
+.input-field input[type]:focus {
+  border-bottom: 1px solid rgba(123, 175, 212, 1.0);
+}
+
+textarea:focus {
+  border-bottom: 1px solid rgba(123, 175, 212, 1.0) !important;
+}
+
+.btn {
+  background-color: rgba(123, 175, 212, 1.0) !important;
+}
+
+.btn:hover {
+  color: rgba(245, 212, 101, 0.96) !important;
+  transition: color .3s ease-in;
+}
+
+#imageWrapper {
+  background-image: url(../img/phone.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+@media(min-width: 993px) {
+  #imageWrapper {
+      background-position: center;
+  }
+}

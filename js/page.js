@@ -9,7 +9,7 @@ $(document).ready(function () {
 });
 
 function showList() {
-  Materialize.showStaggeredList('#link-list');
+  Materialize.showStaggeredList('#linkList');
 }
 
 function materializeStockFunctions() {

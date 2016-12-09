@@ -7,17 +7,17 @@ $(document).ready(function () {
 
 function scrollEvents(popoutShown) {
   if ($(window).scrollTop() > 147) {
-    $("#my-name").addClass("show-name");
+    $("#myName").addClass("show-name");
   } else {
-    $("#my-name").removeClass("show-name");
+    $("#myName").removeClass("show-name");
   }
 
-  if($(window).scrollTop() > $("#raft-container").offset().top - 400) {
-    $("#raft-caption").addClass("show-caption");
+  if($(window).scrollTop() > $("#raftContainer").offset().top - 400) {
+    $("#raftCaption").addClass("show-caption");
   }
 
-  if($(window).scrollTop() > $("#family-container").offset().top - 400) {
-    $("#family-caption").addClass("show-caption");
+  if($(window).scrollTop() > $("#familyContainer").offset().top - 400) {
+    $("#familyCaption").addClass("show-caption");
   }
 
   if((!popoutShown)&&($(window).scrollTop() > $(".popout").offset().top - 400)) {
