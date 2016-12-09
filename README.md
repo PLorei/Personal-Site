@@ -14,10 +14,14 @@ CS1520 Project Part 2
 * Implemented interaction with mySQL DB (in submit.php file)
 * Added PHP function to build popout lists - buildPopoutList()
 * Added PHP function to build chip elements - buildChip()
+* Added PHP function to build form elements - buildInputField()
+* Added PHP function to build list of links with slide animation - buildLinkList()
 * Updated getScripts() and getStyles() functions to take an array parameter for the script/style urls (previously hardcoded)
 * Moved page-specific styles to separate stylesheets
 * Made card elements semi-transparent
 * Commented Code
+* Added type information to PHP function parameters
+
 
 ---
 
