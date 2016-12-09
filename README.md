@@ -73,4 +73,13 @@ CS1520 Project Part 2
 * Added slide-in effect for list of links
 * Added a link to this github repo
 
+#What I learned
+* You save a ton of time writing PHP functions __before__ writing HTML
+ * For checkpoint 1, I simply looked at my HTML and converted repeated markup into functions
+ * This time I wrote the functions and used them to build the repeating markup
+* Hi-res background images make simple pages stand out
+* Subtle transitions = better
+* Take frequent backups. Also be sure to make hard copies of the files and not just links to the htdocs folder :grimacing:
+
+
 _This site was developed and tested on Google Chrome and Firefox, it would be preferred if you used one of those browsers when viewing_
