@@ -41,6 +41,7 @@ CS1520 Project Part 2
 ###Contact Page Updates
 * Added background image
 * Made card elements semi-transparent
+* Added slide-in effect for the list of links
 * Added form that submits to PHP file (submit.php) to handle DB interaction
  * Used HTML form attributes to ensure all fields are filled out
  * Used form validation to ensure email is in correct format
@@ -53,7 +54,6 @@ CS1520 Project Part 2
 * If table _messages_ does not exist it will create it
 * Uses _$_POST_ variable to insert form data into DB
 * Displays error or success message
-* Added slide-in effect for the list of links
 * _Issue_ : if the textarea for field *message_text* contains an apostrophe character, the operation fails
  * I believe this is because the apostrophe closes a php string somewhere in the submit logic, breaking the php
  * The site will catch this and display a formatted error, but nothing will be saved to the DB
