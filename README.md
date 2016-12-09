@@ -16,6 +16,7 @@ CS1520 Project Part 2
 * Added PHP function to build chip elements - buildChip()
 * Added PHP function to build form elements - buildInputField()
 * Added PHP function to build list of links with slide animation - buildLinkList()
+* Added PHP function to build a parallax - getParallax()
 * Updated getScripts() and getStyles() functions to take an array parameter for the script/style urls (previously hardcoded)
 * Moved page-specific styles to separate stylesheets
 * Made card elements semi-transparent
@@ -76,7 +77,7 @@ CS1520 Project Part 2
 #What I learned
 * You save a ton of time writing PHP functions __before__ writing HTML
  * For checkpoint 1, I simply looked at my HTML and converted repeated markup into functions
- * This time I wrote the functions and used them to build the repeating markup
+ * This time I wrote most of the functions beforehand and used them to build the repeating markup
 * Hi-res background images make simple pages stand out
 * Subtle transitions = better
 * Take frequent backups. Also be sure to make hard copies of the files and not just links to the htdocs folder :grimacing:
