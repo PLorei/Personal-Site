@@ -13,16 +13,14 @@
         $conn = new mysqli($servername, $username);
         // Check connection
         if ($conn->connect_error) {
-            echo "<div class='col s12 m8 offset-m2'><div class='submit-wrapper card z-depth-2'><span class='db-error'><span class='error-type'>Error connecting to database: </span>" . $conn->connect_error;
-            echo "</span></div></div>";
+            buildErrorOutput("Error connecting to the database: ", $conn->connect_error);
         }
 
         // Create database if doesn't exist
         $sql = "CREATE DATABASE IF NOT EXISTS myData";
         if ($conn->query($sql) === TRUE) {
         } else {
-            echo "<div class='col s12 m8 offset-m2'><div class='submit-wrapper card z-depth-2'><span class='db-error'><span class='error-type'>Error creating database: </span>" . $conn->error;
-            echo "</span></div></div>";
+            buildErrorOutput("Error creating the database: ", $conn->error);
         }
 
         // select database
@@ -39,8 +37,7 @@
         )";
 
         if (!$conn->query($sql)) {
-          echo "<div class='col s12 m8 offset-m2'><div class='submit-wrapper card z-depth-2'><span class='db-error'><span class='error-type'>Error creating the database: </span>" . $conn->error;
-          echo "</span></div></div>";
+          buildErrorOutput("Error creating the database table: ", $conn->error);
         }
 
         // insert the form data
@@ -48,15 +45,14 @@
           VALUES
           ('$_POST[firstName]','$_POST[lastName]', '$_POST[email]', '$_POST[messageText]')";
 
-        if (!$conn->query($sql)) {
-          echo "<div class='col s12 m8 offset-m2'><div class='submit-wrapper card z-depth-2'><span class='db-error'><span class='error-type'>Error submitting to database: </span>" . $conn->error;
-          echo "</span></div></div>";
-        }
-        else {
+        if ($conn->query($sql)) {
           echo "<div class='col s12 m8 offset-m2'><div class='submit-wrapper card z-depth-2'><span class='success-word'>Success!</span><span class='db-success'>Message succesfully submitted to database! </span>";
           echo "<span class='thank-you'>Thanks ";
           echo $_POST['firstName'];
-          echo "!</span></div></div>";
+          echo "!</span></div></div>";          
+        }
+        else {
+          buildErrorOutput("Error submitting to database: ", $conn->error);
         }
 
         $conn->close();

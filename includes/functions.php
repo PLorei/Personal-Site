@@ -111,4 +111,9 @@
     echo "<img class='parallax-img' id='" . $name . "' src='img/" . $fileName . "'>";
     echo "</div></div>";
   }
+
+  function buildErrorOutput(string $header, string $error) {
+    echo "<div class='col s12 m8 offset-m2'><div class='submit-wrapper card z-depth-2'><span class='db-error'><span class='error-type'>".$header."</span>" . $error;
+    echo "</span></div></div>";
+  }
 ?>
