@@ -100,7 +100,12 @@
     echo "</ul>";
   }
 
-  function getParallax(string $name, string $fileName) {
+  # Builds a parallax and its caption text and location
+  function getParallax(string $name, string $fileName, string $description, string $location) {
+    echo "<div class='caption' id='" . $name . "Caption'>";
+    echo "<span class='caption-text'>" . $description . "</span><br/>";
+    echo "<span class='location'>" . $location . "</span></div>";
+
     echo "<div class='parallax-container' id='" . $name . "Container'>";
     echo "<div class='parallax'>";
     echo "<img class='parallax-img' id='" . $name . "' src='img/" . $fileName . "'>";

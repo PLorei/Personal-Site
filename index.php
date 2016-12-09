@@ -18,17 +18,8 @@
       </p>
     </div>
   </div>
-  <div class="caption" id="familyCaption">
-    <span class="caption-text">
-      Augie's highschool graduation.
-    </span>
-    <br/>
-    <span class="location">
-      Philadelphia, PA
-    </span>
-  </div>
 
-  <?php getParallax("family", "Family.jpg"); ?>
+  <?php getParallax("family", "Family.jpg", "Augie's highschool graduation.", "Philadelphia, PA"); ?>
 
   <div class="section white">
     <div class="row container">
@@ -108,17 +99,8 @@
       </ul>
     </div>
   </div>
-  <div class="caption" id="raftCaption">
-    <span class="caption-text">
-      Rafting the Lower Youghiogheny.
-    </span>
-    <br/>
-    <span class="location">
-      Ohiopyle, PA
-    </span>
-  </div>
 
-  <?php getParallax("raft", "Raft.jpg"); ?>
+  <?php getParallax("raft", "Raft.jpg","Rafting the Lower Youghiogheny.", "Ohiopyle, PA"); ?>
 
   <div class="section white">
     <div class="row container">
