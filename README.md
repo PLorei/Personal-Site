@@ -1,5 +1,4 @@
-# Project2
-CS1520 Project Part 2
+# Personal Site
 
 ##General Updates
 * Updated site color theme (blue and gold)
@@ -82,5 +81,3 @@ CS1520 Project Part 2
 * Subtle transitions = better
 * Take frequent backups. Also be sure to make hard copies of the files and not just links to the htdocs folder :grimacing:
 
-
-_This site was developed and tested on Google Chrome and Firefox, it would be preferred if you used one of those browsers when viewing_
